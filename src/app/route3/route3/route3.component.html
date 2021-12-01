@@ -1,0 +1,11 @@
+<div class="container">
+    <app-timer [currentTime]="currentTime" class="item"></app-timer>
+    <app-set-timer
+            [currentTime]="currentTime" 
+            (timeDuration)="getTimeDuration($event)"
+            (clicks)="getclickDetails($event)"
+            class="item">
+    </app-set-timer>
+    <app-time-stamps [timeStamp]="timeStamp" class="item"></app-time-stamps>
+    <app-click-logs [clickData]="clickData" class="item"></app-click-logs>
+</div>
