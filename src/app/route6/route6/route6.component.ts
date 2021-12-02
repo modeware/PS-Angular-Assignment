@@ -32,7 +32,7 @@ export class Route6Component implements OnInit, AfterViewInit {
     this.renderer.addClass(div, 'box')
     this.renderer.listen(button, 'click', ()=>{
       (function(){let c = count;
-      alert(`Button in ${c}th div is clicked`)
+      alert(`Button in  div ${c} is clicked`)
     }())
     })
 

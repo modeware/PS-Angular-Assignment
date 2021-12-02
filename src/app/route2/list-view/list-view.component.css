@@ -8,7 +8,7 @@
             display: flex;
             border: 1px solid black;
             margin: 2px;
-            height: 200px;
+            height: 250px;
             justify-content: center;
             align-items: center;
             flex-direction: column;
@@ -26,3 +26,10 @@
     
     }
     
+
+    @media (max-width: 900px){
+        .container{
+            display: grid;
+            grid-template-columns: auto;               
+        }
+    }

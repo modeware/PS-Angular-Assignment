@@ -1,7 +1,7 @@
-<div>
+<div class="container">
     <table>
         <tr>
-          <th *ngFor="let heading of headings; let i=index" (click)="sortTableData(heading.headingName, i)">{{heading.headingName}}</th>
+          <th class="cursor-style" *ngFor="let heading of headings; let i=index" (click)="sortTableData(heading.headingName, i)">{{heading.headingName}}</th>
         </tr>
         <tr *ngFor="let student of userData">
           <td *ngFor="let s of student | keyvalue: originalOrder">{{s.value}}</td>

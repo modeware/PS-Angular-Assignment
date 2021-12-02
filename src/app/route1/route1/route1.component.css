@@ -1,5 +1,6 @@
 .first-outer-div{
-    background-color: yellowgreen;
+    margin-top: 50px;
+    background-color: blanchedalmond;
     display: flex;
 
 }

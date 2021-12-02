@@ -1,0 +1,25 @@
+.container{
+    display: grid;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 50px;
+}
+
+.cursor-style{
+    cursor: pointer;
+}
+
+th.cursor-style::hover{
+    color: 'green';
+    font-weight: bold;
+}
+
+td,th{
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    th{
+        margin-left: 2px;
+    }
+}

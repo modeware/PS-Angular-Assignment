@@ -9,14 +9,24 @@ import {Route2Service} from './route2.service';
 export class Route2Component implements OnInit {
   gridView: boolean = true;
   products: Array<any> = [];
+  loading: boolean = false;
+  error: boolean = false;
 
   constructor(private route2Service: Route2Service) { }
 
   ngOnInit(): void {
+    this.loading = true;
     this.route2Service.getProducts()
       .subscribe((prod: any) => {
         this.products = this.orderAscending(prod)
-      })
+        this.loading = false;;
+      },
+      
+      (err)=>{
+        this.loading = false
+        this.error = true;
+      }
+      )
   }
 
   toggleView(){
