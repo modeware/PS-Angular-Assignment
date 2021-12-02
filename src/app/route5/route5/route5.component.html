@@ -1,1 +1,11 @@
-<p>route5 works!</p>
+<div>
+    <table>
+        <tr>
+          <th *ngFor="let heading of headings; let i=index" (click)="sortTableData(heading.headingName, i)">{{heading.headingName}}</th>
+        </tr>
+        <tr *ngFor="let student of userData">
+          <td *ngFor="let s of student | keyvalue: originalOrder">{{s.value}}</td>
+        </tr>
+
+      </table>
+</div>
