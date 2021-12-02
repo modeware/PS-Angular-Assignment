@@ -5,11 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './route4.component.html',
   styleUrls: ['./route4.component.css']
 })
-export class Route4Component implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class Route4Component{
 
 }
