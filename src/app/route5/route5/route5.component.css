@@ -5,21 +5,26 @@
     margin-top: 50px;
 }
 
+
 .cursor-style{
     cursor: pointer;
+   
 }
 
-th.cursor-style::hover{
-    color: 'green';
-    font-weight: bold;
+.cursor-style:hover{
+    color: grey;
+   
 }
+
+
 
 td,th{
     text-align: center;
 }
 
-@media (min-width: 768px){
-    th{
-        margin-left: 2px;
-    }
+@media (max-width: 768px){
+   table{
+    border-collapse: separate;
+    border-spacing: 15px 50px;
+   }
 }
