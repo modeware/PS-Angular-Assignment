@@ -1,6 +1,6 @@
 <div class="settings">
-    <button class="btn btn-primary" (click)="toggleView()">Grid View</button>
-    <button class="btn btn-primary ml-2 mr-2" (click)="toggleView()">List View</button>
+    <button class="btn btn-primary" (click)="toggleView(true)">Grid View</button>
+    <button class="btn btn-primary ml-2 mr-2" (click)="toggleView(false)">List View</button>
     <select (change)="order($event)">
         <option value="1">Price Low->High</option>
         <option value="0">Price High->Low</option>

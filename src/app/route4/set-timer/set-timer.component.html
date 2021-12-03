@@ -1,7 +1,10 @@
-<div>
-    <label>Enter Timer Amount</label>
-    <input type="text" [(ngModel)]="currentTime"/>
-    {{currentTime}}
-    <button (click)="onSubmit()">Start/Pause</button>
-    <button (click)="reset()"type="button">Reset</button>
+<div class="container">
+    <div>
+        <label>Enter Timer Duration :
+            <input class="form-control" type="text" [(ngModel)]="currentTime"/>
+        </label>
+       
+        <button class="btn btn-primary" (click)="onSubmit()">Start/Pause</button>
+        <button class="btn btn-primary" (click)="reset()"type="button">Reset</button>
+    </div>
  </div>   

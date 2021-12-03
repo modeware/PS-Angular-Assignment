@@ -29,12 +29,11 @@ export class Route2Component implements OnInit {
       )
   }
 
-  toggleView(){
-    this.gridView = !this.gridView;
+  toggleView(value: boolean): void {
+    this.gridView = value;
   }
 
   order(event: any) {
-    debugger;
     if(event.target.value == 1){
       this.products = this.orderAscending(this.products)
     }

@@ -23,7 +23,11 @@ export class Route5Component implements OnInit {
         return {'headingName': data, count: 0}
       });
       console.log(this.headings)
-    })
+    }, 
+    
+      (err)=>{
+        alert('Something Went Wrong')
+      })
   }
 
   

@@ -20,6 +20,15 @@ export class SetTimerComponent implements OnInit {
   }
 
   onSubmit(){
+    if(isNaN(this.currentTime)){
+      alert("Please Enter Numeric Values")
+      return;
+    }else if(this.currentTime <= 0){
+      this.toggle = false;
+      alert("Please Enter Value Greater Than 0")
+      return;
+    }
+
     this.toggle = !this.toggle;
     if(this.toggle){
       let date = new Date()

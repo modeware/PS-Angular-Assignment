@@ -17,13 +17,26 @@ export class SetTimerComponent implements OnInit {
 
   ngOnInit(): void {
     this.route4Service.currentTimeDuration.subscribe((data: any)=> {
-        console.log("Hello", data)  
         this.currentTime = data
+        console.log(this.currentTime)
+        if(this.currentTime <= 0){
+          console.log("Hello", data)  
+
+          this.toggle = false;
+        }
         
         })
   }
 
   onSubmit(){
+    if(isNaN(this.currentTime)){
+      alert("Please Enter Numeric Values")
+      return;
+    }else if(this.currentTime <= 0){
+      alert("Please Enter Value Greater Than 0")
+      return;
+    }
+
     this.toggle = !this.toggle;
     if(this.toggle){
       let date = new Date()
