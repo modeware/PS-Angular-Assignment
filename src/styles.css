@@ -3,3 +3,72 @@
     overflow-y: scroll;
     height: 100%;
 }
+
+.container-timer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 5px;
+
+}
+.center-button-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button-container{
+    margin: 15px;
+    width: 150px;
+}
+
+.label-container{
+    text-align: center;
+}
+
+
+.timer-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    justify-content: space-evenly;
+}
+
+.timer-item{
+    width: 600px;
+    height: 250px;
+    border: 1px solid black
+}
+
+@media (max-width: 1000px) {
+    
+.timer-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    justify-content: space-evenly;
+}
+.timer-item{
+    width: 400px;
+    height: 200px;
+    border: 1px solid black
+}
+}
+
+@media (min-width:1000px) and (max-width: 1200px) {
+    
+.timer-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    justify-content: space-evenly;
+}
+.timer-item{
+
+    width: 550px;
+    height: 200px;
+    border: 1px solid black
+}
+}
+

@@ -1,12 +1,16 @@
 <h2>Set Timer</h2>
 
-<div class="container">
-    <div>
-        <label>Enter Timer Duration :
-            <input class="form-control" type="text" [(ngModel)]="currentTime"/>
-        </label>
-       
-        <button class="btn btn-primary" (click)="onSubmit()">Start/Pause</button>
-        <button class="btn btn-primary" (click)="reset()"type="button">Reset</button>
+<div class="container-timer ">
+    <div input-group mb-3>
+        <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-lg">Enter Timer Duration :</span>
+            </div>
+            <input type="text"  [(ngModel)]="currentTime" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+          </div>
+    <div class="center-button-group">
+        <button class="btn btn-primary button-container" (click)="onSubmit()">Start/Pause</button>
+        <button class="btn btn-primary button-container" (click)="reset()"type="button">Reset</button>
+    </div>
     </div>
  </div>   

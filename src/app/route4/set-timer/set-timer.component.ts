@@ -1,4 +1,4 @@
-import { Component, OnInit, Output,Input, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Route4Service } from '../route4.service';
 
 @Component({
