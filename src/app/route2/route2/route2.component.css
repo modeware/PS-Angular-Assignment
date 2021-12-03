@@ -5,8 +5,10 @@
 }
 
 .settings{
-    width: 85.4%;
+    width:100%;
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: end;
+    justify-content: center;
+    margin-bottom: 20px ;
+    margin-top: 20px;
 }
