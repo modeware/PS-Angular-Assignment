@@ -1,7 +1,10 @@
-<h2>Time Stamp</h2>
 
-<div *ngIf="timeStamp && timeStamp.length > 0">
-   <p *ngFor="let data of timeStamp">
-       <span>{{data.date}}</span>
-    </p>
+<div class="scroll-setting">
+    <h2>Time Stamp</h2>
+
+    <div *ngIf="timeStamp && timeStamp.length > 0">
+    <p *ngFor="let data of timeStamp">
+        <span>{{data.date}}</span>
+        </p>
+    </div>
 </div>
