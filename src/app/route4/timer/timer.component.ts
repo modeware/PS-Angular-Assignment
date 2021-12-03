@@ -21,14 +21,14 @@ export class TimerComponent implements OnInit {
 
     if(time.toggle){
       this.currentTime = time.duration;
-      this.timeInterval = setInterval(()=>{
-                              this.currentTime = this.currentTime -1;
-                              if(this.currentTime <= 0){
-                                this.currentTime = 0;
-                                this.route4Service.currentTime(0);
-                                clearInterval(this.timeInterval)
-                              }
-                            },1000)
+        this.timeInterval = setInterval(()=>{
+                                this.currentTime = this.currentTime -1;
+                                if(this.currentTime <= 0){
+                                  this.currentTime = 0;
+                                  this.route4Service.currentTime(0);
+                                  clearInterval(this.timeInterval)
+                                }
+                              },1000)
 
     }
     else if(time.reset){
