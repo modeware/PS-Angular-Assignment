@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Route2Service} from './route2.service';
+import {Product} from '../products.model'
 
 @Component({
   selector: 'app-route2',
@@ -8,7 +9,7 @@ import {Route2Service} from './route2.service';
 })
 export class Route2Component implements OnInit {
   gridView: boolean = true;
-  products: Array<any> = [];
+  products: Array<Product> = [];
   loading: boolean = false;
   error: boolean = false;
 
@@ -42,15 +43,15 @@ export class Route2Component implements OnInit {
     }
   }
 
-  orderAscending(products: Array<any>){
+  orderAscending(products: Array<Product>){
     let sortP = products;
-    sortP = sortP.sort((a, b)=> parseInt(a.price) - parseInt(b.price))
+    sortP = sortP.sort((a, b)=> (a.price) - (b.price))
 
     return sortP
   }
-  orderDescending(products: Array<any>){
+  orderDescending(products: Array<Product>){
     let sortP = products;
-    sortP = sortP.sort((a, b)=> parseInt(b.price) - parseInt(a.price))
+    sortP = sortP.sort((a, b)=> (b.price) - (a.price))
     return sortP;
   }
 
