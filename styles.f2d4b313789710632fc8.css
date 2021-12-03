@@ -1,4 +1,6 @@
-.scroll-setting{overflow-y:scroll;height:100%}
+.scroll-setting{overflow-y:scroll;height:100%}.container-timer{display:grid;grid-gap:5px}.center-button-group,.container-timer{justify-content:center;align-items:center}.center-button-group{display:flex}.button-container{margin:15px;width:150px}.label-container{text-align:center}.timer-container{display:grid;grid-template-columns:auto auto;grid-gap:20px;justify-content:space-evenly}.timer-item{width:600px;height:250px;border:1px solid #000}@media (max-width: 1000px){.timer-container{display:grid;grid-template-columns:auto;grid-gap:20px;justify-content:space-evenly}.timer-item{width:400px;height:200px;border:1px solid #000}}@media (min-width:1000px) and (max-width: 1200px){.timer-container{display:grid;grid-template-columns:auto auto;grid-gap:20px;justify-content:space-evenly}.timer-item{width:550px;height:200px;border:1px solid #000}}
+
+
 /*!
  * Bootstrap v4.6.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
